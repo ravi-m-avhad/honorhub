@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NFT Gallery</title>
+    <style>
+        /* Your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            max-height: 40px;
+        }
+
+        .nft-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: stretch;
+            margin: 0 -10px;
+        }
+
+        .nft-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            flex: 0 0 calc(25% - 20px); /* 4 cards per row */
+            max-width: calc(25% - 20px);
+            box-sizing: border-box;
+        }
+
+        .nft-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .nft-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .nft-info {
+            padding: 15px;
+        }
+
+        .nft-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .nft-description {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .navbar {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #3e5772;
+        }
+
+        .footer {
+            background-color: #34495e;
+            text-align: center;
+            padding: 10px 0;
+            color: #fff;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- Text Logo (Add your own image URL) -->
+            <img src="text_logo.png" alt="Text Logo">
+        </div>
+        <div class="navbar">
+            <!-- Navbar with 8 menu options -->
+            <a href="#">Option 1</a>
+            <a href="#">Option 2</a>
+            <a href="#">Option 3</a>
+            <a href="#">Option 4</a>
+            <a href="#">Option 5</a>
+            <a href="#">Option 6</a>
+            <a href="#">Option 7</a>
+            <a href="#">Option 8</a>
+        </div>
+        <div class="nft-grid">
+            <!-- Sample NFT cards (Replace with your images and content) -->
+            <!-- Repeat these card structures to create 20 cards -->
+            <div class="nft-card">
+                <!-- Placeholder image -->
+                <img src="placeholder_image.jpg" alt="NFT Image" class="nft-image">
+                <div class="nft-info">
+                    <div class="nft-title">NFT Title 1</div>
+                    <div class="nft-description">Description of NFT 1</div>
+                </div>
+            </div>
+            <div class="nft-card">
+			                <!-- Placeholder image -->
+			                <img src="placeholder_image.jpg" alt="NFT Image" class="nft-image">
+			                <div class="nft-info">
+			                    <div class="nft-title">NFT Title 1</div>
+			                    <div class="nft-description">Description of NFT 1</div>
+			                </div>
+            </div>
+            <div class="nft-card">
+			                <!-- Placeholder image -->
+			                <img src="placeholder_image.jpg" alt="NFT Image" class="nft-image">
+			                <div class="nft-info">
+			                    <div class="nft-title">NFT Title 1</div>
+			                    <div class="nft-description">Description of NFT 1</div>
+			                </div>
+            </div>
+            <div class="nft-card">
+			                <!-- Placeholder image -->
+			                <img src="placeholder_image.jpg" alt="NFT Image" class="nft-image">
+			                <div class="nft-info">
+			                    <div class="nft-title">NFT Title 1</div>
+			                    <div class="nft-description">Description of NFT 1</div>
+			                </div>
+            </div>
+            <!-- Add more NFT cards -->
+        </div>
+        <div class="nft-grid">
+		            <!-- Sample NFT cards (Replace with your images and content) -->
+		            <!-- Repeat these card structures to create 20 cards -->
+		            <div class="nft-card">
+		                <!-- Placeholder image -->
+		                <img src="placeholder_image.jpg" alt="NFT Image" class="nft-image">
+		                <div class="nft-info">
+		                    <div class="nft-title">NFT Title 1</div>
+		                    <div class="nft-description">Description of NFT 1</div>
+		                </div>
+		            </div>
+		            <div class="nft-card">
+					                <!-- Placeholder image -->
+					                <img src="placeholder_image.jpg" alt="NFT Image" class="nft-image">
+					                <div class="nft-info">
+					                    <div class="nft-title">NFT Title 1</div>
+					                    <div class="nft-description">Description of NFT 1</div>
+					                </div>
+		            </div>
+		            <div class="nft-card">
+					                <!-- Placeholder image -->
+					                <img src="placeholder_image.jpg" alt="NFT Image" class="nft-image">
+					                <div class="nft-info">
+					                    <div class="nft-title">NFT Title 1</div>
+					                    <div class="nft-description">Description of NFT 1</div>
+					                </div>
+		            </div>
+		            <div class="nft-card">
+					                <!-- Placeholder image -->
+					                <img src="placeholder_image.jpg" alt="NFT Image" class="nft-image">
+					                <div class="nft-info">
+					                    <div class="nft-title">NFT Title 1</div>
+					                    <div class="nft-description">Description of NFT 1</div>
+					                </div>
+		            </div>
+		            <!-- Add more NFT cards -->
+        </div>
+        <div class="nft-grid">
+		            <!-- Sample NFT cards (Replace with your images and content) -->
+		            <!-- Repeat these card structures to create 20 cards -->
+		            <div class="nft-card">
+		                <!-- Placeholder image -->
+		                <img src="placeholder_image.jpg" alt="NFT Image" class="nft-image">
+		                <div class="nft-info">
+		                    <div class="nft-title">NFT Title 1</div>
+		                    <div class="nft-description">Description of NFT 1</div>
+		                </div>
+		            </div>
+		            <div class="nft-card">
+					                <!-- Placeholder image -->
+					                <img src="placeholder_image.jpg" alt="NFT Image" class="nft-image">
+					                <div class="nft-info">
+					                    <div class="nft-title">NFT Title 1</div>
+					                    <div class="nft-description">Description of NFT 1</div>
+					                </div>
+		            </div>
+		            <div class="nft-card">
+					                <!-- Placeholder image -->
+					                <img src="placeholder_image.jpg" alt="NFT Image" class="nft-image">
+					                <div class="nft-info">
+					                    <div class="nft-title">NFT Title 1</div>
+					                    <div class="nft-description">Description of NFT 1</div>
+					                </div>
+		            </div>
+		            <div class="nft-card">
+					                <!-- Placeholder image -->
+					                <img src="placeholder_image.jpg" alt="NFT Image" class="nft-image">
+					                <div class="nft-info">
+					                    <div class="nft-title">NFT Title 1</div>
+					                    <div class="nft-description">Description of NFT 1</div>
+					                </div>
+		            </div>
+		            <!-- Add more NFT cards -->
+        </div>
+        <div class="nft-grid">
+		            <!-- Sample NFT cards (Replace with your images and content) -->
+		            <!-- Repeat these card structures to create 20 cards -->
+		            <div class="nft-card">
+		                <!-- Placeholder image -->
+		                <img src="placeholder_image.jpg" alt="NFT Image" class="nft-image">
+		                <div class="nft-info">
+		                    <div class="nft-title">NFT Title 1</div>
+		                    <div class="nft-description">Description of NFT 1</div>
+		                </div>
+		            </div>
+		            <div class="nft-card">
+					                <!-- Placeholder image -->
+					                <img src="placeholder_image.jpg" alt="NFT Image" class="nft-image">
+					                <div class="nft-info">
+					                    <div class="nft-title">NFT Title 1</div>
+					                    <div class="nft-description">Description of NFT 1</div>
+					                </div>
+		            </div>
+		            <div class="nft-card">
+					                <!-- Placeholder image -->
+					                <img src="placeholder_image.jpg" alt="NFT Image" class="nft-image">
+					                <div class="nft-info">
+					                    <div class="nft-title">NFT Title 1</div>
+					                    <div class="nft-description">Description of NFT 1</div>
+					                </div>
+		            </div>
+		            <div class="nft-card">
+					                <!-- Placeholder image -->
+					                <img src="placeholder_image.jpg" alt="NFT Image" class="nft-image">
+					                <div class="nft-info">
+					                    <div class="nft-title">NFT Title 1</div>
+					                    <div class="nft-description">Description of NFT 1</div>
+					                </div>
+		            </div>
+		            <!-- Add more NFT cards -->
+        </div>
+        <div class="nft-grid">
+		            <!-- Sample NFT cards (Replace with your images and content) -->
+		            <!-- Repeat these card structures to create 20 cards -->
+		            <div class="nft-card">
+		                <!-- Placeholder image -->
+		                <img src="placeholder_image.jpg" alt="NFT Image" class="nft-image">
+		                <div class="nft-info">
+		                    <div class="nft-title">NFT Title 1</div>
+		                    <div class="nft-description">Description of NFT 1</div>
+		                </div>
+		            </div>
+		            <div class="nft-card">
+					                <!-- Placeholder image -->
+					                <img src="images/image1.jpg" alt="NFT Image" class="nft-image" height="40%" width="40%">
+					                <div class="nft-info">
+					                    <div class="nft-title">NFT Title 1</div>
+					                    <div class="nft-description">Description of NFT 1</div>
+					                </div>
+		            </div>
+		            <div class="nft-card">
+					                <!-- Placeholder image -->
+					                <img src="placeholder_image.jpg" alt="NFT Image" class="nft-image">
+					                <div class="nft-info">
+					                    <div class="nft-title">NFT Title 1</div>
+					                    <div class="nft-description">Description of NFT 1</div>
+					                </div>
+		            </div>
+		            <div class="nft-card">
+					                <!-- Placeholder image -->
+					                <img src="placeholder_image.jpg" alt="NFT Image" class="nft-image">
+					                <div class="nft-info">
+					                    <div class="nft-title">NFT Title 1</div>
+					                    <div class="nft-description">Description of NFT 1</div>
+					                </div>
+		            </div>
+		            <!-- Add more NFT cards -->
+        </div>
+    </div>
+    <div class="footer">
+        <!-- Footer with standard links -->
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Contact Us</a>
+    </div>
+</body>
+
+</html>
